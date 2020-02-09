@@ -13,7 +13,8 @@ ___
 
 **Задание 3:**  
 написать алгоритм, как в целом числе самый правый ноль превратить в единицу не используя циклы и рекурсию.    
-_Решение для десятичных чисел:_ FarRightDecimalZeroRegexpReplacer.class
-_Решение для двоичных чисел:_ FarRightDecimalZeroRegexpReplacer.class
+_Решение для десятичных чисел с помощью регулярных выражений:_ DecimalFarRightZeroRegexpReplacer.class  
+_Решение для десятичных чисел с помощью внутренних функций класса String:_ DecimalFarRightZeroIndexReplacer.class  
+_Решение для двоичных чисел:_ BinaryFarRightZeroReplacer.class  
 ___
 
