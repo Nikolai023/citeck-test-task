@@ -33,8 +33,8 @@ public class IntListToSortedIntEntryListConverterImplTest {
         List<Integer> singleEntityList = Collections.singletonList(1);
 
         List<IntEntry> result = converter.convert(singleEntityList);
-        assertEquals(result.size(), 1);
-        assertEquals(result.get(0), IntEntry.of(1, 1));
+        assertEquals(1, result.size());
+        assertEquals(IntEntry.of(1, 1), result.get(0));
     }
 
     @Test
@@ -42,11 +42,11 @@ public class IntListToSortedIntEntryListConverterImplTest {
         List<Integer> intList = Arrays.asList(1, 3, 3, 3, 2, 2, 4, 4, 4, 4);
 
         List<IntEntry> result = converter.convert(intList);
-        assertEquals(result.size(), 4);
-        assertEquals(result.get(0), IntEntry.of(4, 4));
-        assertEquals(result.get(1), IntEntry.of(3, 3));
-        assertEquals(result.get(2), IntEntry.of(2, 2));
-        assertEquals(result.get(3), IntEntry.of(1, 1));
+        assertEquals(4, result.size());
+        assertEquals(IntEntry.of(4, 4), result.get(0));
+        assertEquals(IntEntry.of(3, 3), result.get(1));
+        assertEquals(IntEntry.of(2, 2), result.get(2));
+        assertEquals(IntEntry.of(1, 1), result.get(3));
     }
 
     @Test
@@ -54,10 +54,10 @@ public class IntListToSortedIntEntryListConverterImplTest {
         List<Integer> intList = Arrays.asList(1, 3, 3, 2, 2, 4);
 
         List<IntEntry> result = converter.convert(intList);
-        assertEquals(result.size(), 4);
-        assertEquals(result.get(0), IntEntry.of(2, 2));
-        assertEquals(result.get(1), IntEntry.of(3, 2));
-        assertEquals(result.get(2), IntEntry.of(1, 1));
-        assertEquals(result.get(3), IntEntry.of(4, 1));
+        assertEquals(4, result.size());
+        assertEquals(IntEntry.of(2, 2), result.get(0));
+        assertEquals(IntEntry.of(3, 2), result.get(1));
+        assertEquals(IntEntry.of(1, 1), result.get(2));
+        assertEquals(IntEntry.of(4, 1), result.get(3));
     }
 }
