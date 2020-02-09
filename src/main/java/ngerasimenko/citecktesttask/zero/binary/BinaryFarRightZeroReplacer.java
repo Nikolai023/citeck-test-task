@@ -1,4 +1,4 @@
-package ngerasimenko.citecktesttask.zero;
+package ngerasimenko.citecktesttask.zero.binary;
 
 import org.springframework.stereotype.Component;
 
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * Исключение - число 0, которое представлено только нулём (0b0)
  */
 @Component
-public class FarRightBinaryZeroReplacer {
+public class BinaryFarRightZeroReplacer {
     private static boolean onesOnly(int number) {
         return ((number + 1) & number) == 0;
     }

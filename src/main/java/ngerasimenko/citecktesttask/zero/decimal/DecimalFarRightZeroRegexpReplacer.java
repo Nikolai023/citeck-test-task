@@ -1,11 +1,13 @@
-package ngerasimenko.citecktesttask.zero;
+package ngerasimenko.citecktesttask.zero.decimal;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import java.util.regex.Pattern;
 
 @Component
-public class FarRightDecimalZeroRegexpReplacer {
+@Qualifier("regexp")
+public class DecimalFarRightZeroRegexpReplacer implements DecimalFarRightZeroReplacer {
     private static final Pattern PATTERN = Pattern.compile("0(?!.*0)");
 
     public int replace(int number) {
