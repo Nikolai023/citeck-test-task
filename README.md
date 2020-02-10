@@ -3,19 +3,19 @@
 
 **Задание 1:**  
 Имеется массив чисел, получить список вида {число, количество вхождений числа в массив}, список должен быть отсортирован по количеству вхождений, внутри по возрастания числа. Использовать можно любой алгоритмический язык.  
-_Решение:_ IntListToSortedIntEntryListConverterImpl.class
+_Решение:_ IntListToSortedIntEntryListConverterImpl.java
 ___
 
 **Задание 2:**  
 Написать алгоритм проверки корректности регулярного выражения, которое включает [,],(,) т.е., например ([][[]()]) - правильно, ([][]()]) – неправильно  
-_Решение:_ RegexpBracketsValidator.class
+_Решение:_ RegexpBracketsValidator.java
 ___
 
 **Задание 3:**  
 Написать алгоритм, как в целом числе самый правый ноль превратить в единицу не используя циклы и рекурсию.    
-_Решение для десятичных чисел с помощью регулярных выражений:_ DecimalFarRightZeroRegexpReplacer.class  
-_Решение для десятичных чисел с помощью внутренних функций класса String:_ DecimalFarRightZeroIndexReplacer.class  
-_Решение для двоичных чисел:_ BinaryFarRightZeroReplacer.class  
+_Решение для десятичных чисел с помощью регулярных выражений:_ DecimalFarRightZeroRegexpReplacer.java  
+_Решение для десятичных чисел с помощью внутренних функций класса String:_ DecimalFarRightZeroIndexReplacer.java  
+_Решение для двоичных чисел:_ BinaryFarRightZeroReplacer.java  
 ___
 
 **Задание 4:**  
@@ -26,5 +26,6 @@ ___
 
 _Решение:_
 1. СУБД Postgresql, соответствует стандарту SQL:2011
-2. Скрипт генерации таблиц и заполнения данных расположен по пути "src/main/resources/sql/Generation.sql"
+2. Скрипт генерации таблиц и заполнения данных, расположен по пути "src/main/resources/sql/Generation.sql"
+2. Скрипт, решающий задачу, расположен по пути "src/main/resources/sql/Solution.sql"
 ___

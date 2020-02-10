@@ -20,6 +20,3 @@ $$
     END;
 $$
 LANGUAGE plpgsql;
-
-SELECT *
-FROM numbers;
